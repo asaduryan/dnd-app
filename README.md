@@ -1,6 +1,6 @@
 # Test app dnd
 
-# [Demo](http://localhost:3000)
+# [Demo](https://dndapp.netlify.com/)
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88a0b122-f8f7-4f8f-a60e-33830216425e/deploy-status)](https://app.netlify.com/sites/dndapp/deploys)
