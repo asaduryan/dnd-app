@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+  background-color: white;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .appContainer {
+      width: 100%;
+
+      .inputBox {
+        padding: 10px;
+
+        .inputName {
+          padding: 5px;
+          border: none;
+          border-bottom: 1px solid black;
+
+          &:focus {
+            outline-width: 0;
+          }
+        }
+
+        .inputButton {
+          padding: 5px 10px;
+          background-color: dodgerblue;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .boardBox {
+        display: flex;
+        width: 100%;
+
+        .board {
+          width: 100%;
+          height: 25rem;
+          padding: 1rem;
+          text-align: center;
+          font-size: 1rem;
+          line-height: normal;
+          border-right: 1.5px solid #BBBBBB;
+          float: left;
+          color: #3e3e3e;
+          background-color: #DEDEDE;
+          transition: background-color 0.3s ease-in;
+
+          &.onSection {
+            background-color: #ECECEC;
+          }
+
+          .box {
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 10px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            cursor: move;
+            float: left;
+            box-shadow: 1px 1px 1px #909090;
+
+            &.swing {
+              animation: swing ease-in-out 0.3s infinite alternate;
+              transform-origin: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+}
